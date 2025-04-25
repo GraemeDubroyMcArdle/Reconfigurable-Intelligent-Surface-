@@ -2,8 +2,8 @@
 This is a final capstone project divided into 2 catagories, Reflective Surface and Absorption Surface
 
 The Reflective Panel takes advantage of the of constructive and destructive inteference in order to steer the beam laser.
-Using an STM32 Array, a instruction is sent from the master controller to several secondary controllers using the I2C .wire communication protocol
-The Slave boards then trigger Transistors to allow current from a 5V bus to place a forward bias current onto a pin diode, creating capacitance on the surface.
+Using an STM32 Array, a instruction is sent from the controller to 7 shift registers configured in series using SPI communication protocol
+The shift Registers then trigger Transistors to allow current from a 5V bus to place a forward bias current onto a pin diode, creating capacitance on the surface.
 In turn, this Capacitance affects the reflection coefficient, allowing for beam steering
 
 The absorption panel requires us to match the transmitted incident wave's impedance in order to achieve perfect absorption.
